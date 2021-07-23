@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+  <!-- for smartphone. ここは一旦、いじらなくてOKです。 -->
+	<meta charset="utf-8"><!-- 文字コード指定。ここはこのままで。 -->
+	<title>よしかずのプロフィール</title>
+<style>
+	.class1{
+        background-color: rgb(165, 248, 117);
+		font-size:25px;
+    }
+</style>
+</head>
+
+<body>
+<!-- 見出し 第１レベル -->
+<!--（氏名）の公開を避ける場合はイニシャルやニックネームでOK-->
+<h1 class="midashi_1"> よしかずのプロフィール </h1>
+
+<!--自分を象徴するような画像を入れてみよう-->
+<!--画像も同じフォルダに保存すること-->
+<img src="gazou.png" alt="自分を象徴する写真など" title="プロフィール画像" width="320px" ><br>
+（画像についてひとこと：動物が好きです）
+
+<hr>
+
+<!-- 見出し 第２レベル ・以下、h2レベルで項目を色々書いていきましょう -->
+<!-- 自己紹介で言いたい項目を見出しにいれて、文章をつくりましょう。項目名は編集OK。項目を足してもOK。 -->
+<div class="class1">所属など</div>
+　石川県の大学で機械の知能化や自動化の勉強をしています<br>
+　土曜日に塾講師のバイトをしています<br>
+<br>
+
+<div class="class1">趣味や属性</div>
+　家でyoutubeや映画を見ることが多いです<br>
+　あまり人見知りをしないので初対面の人とも緊張せずに話せます<br>
+　好きなyoutuberさんやおすすめの作品についてお話できたらうれしいです<br>
+  <br>
+
+<!-- HTMLで出来る色々な表現を試す -->
+<!-- ↑文字に意味を持たせることもできます。strong は太字。ググったりして色々と調べてみましょう -->
+<!-- 例として今回は「リスト表示」を作ってみましょう。項目数が３で足りないなら足してもOKです -->
+<!-- 番号をふるなら ol タグ、番号がいらないなら ul タグ で囲って、項目は li タグで括ります。 -->
+<!-- ol ・ ul 片方でOK -->
+<div class="class1">好きな動物トップ３</div>
+<strong> 私の好きな動物のトップ３です！</strong><br>
+<!-- ↑文字に意味を持たせることもできます。strong は強調。太字になります。 -->
+
+<ol>
+	<li>ぺんぎん</li>
+	<li>ねこ</li>
+	<li>とかげ</li>
+</ol>
+
+<hr>
+
+<!-- 以下は、見出しの名前は固定で、内容を編集してみましょう -->
+<div class="class1">その他</div>
+<!-- 見出し 第３レベル -->
+<h3>使用PC</h3><!-- 編集して、自分の使うPCだけ残しましょう -->
+ Windows
+
+<h3>PC利用経験や普段の使い方</h3>
+wordやexcelの編集，時々プログラミング(C++)<br>
+youtubeや動画サイトをよく見ます
+
+<h3>自分の強みや弱みなど</h3>
+強み：主体性があって自分がやりたいことに向かって努力できる<br>
+弱み：自分が嫌なことはギリギリまで取り組むことができない<br>
+
+
+<h3>TECH-BASE参加にあたり、意気込み</h3>
+大学の授業との両立が大変ですが，最後まで頑張ります！<br>
+<br>
+
+<hr>
+<a href="#midashi_1"> このページのTOPへ </a> ／ <a href="https://www.google.co.jp/" target="_blank"> ググる </a>
+<hr>
+
+<!-- 以下は投稿フォーム欄ですが、今は＆このままでは機能しておらずエラーが発生します。 -->
+<!-- したがって今はコピペするだけでOKです。スタートアップ以降のPHPミッションを進める際に、参考にしてください。 -->
+<form method="POST" action="">
+	お名前：<input type="text" name="name"><br>
+	コメント：<input type="text" name="comment"><br>
+	<input type="submit" name="submit" value="送信">
+</form>
+
+</body>
+</html>
